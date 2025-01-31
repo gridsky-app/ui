@@ -1,0 +1,78 @@
+html.gsky-theme--dx {
+  $gsky-theme-border-radius: 24px;
+
+  .v-theme--dark {
+    --v-border-opacity: 0.09;
+  }
+
+  // post
+
+  .gsky-post {
+    &__header {
+      padding-top: 12px !important;
+      padding-bottom: 12px !important;
+    }
+
+    &__actions {
+      padding-top: 8px !important;
+    }
+
+    &-dialog__layout--desktop {
+      border-radius: $gsky-theme-border-radius !important;
+
+      .gsky-media {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+  }
+
+  // media
+
+  .gsky-media {
+    border-radius: $gsky-theme-border-radius;
+    overflow: hidden;
+  }
+
+  // feed
+
+  .gsky-feed {
+    &-grid {
+      margin-top: 12px;
+
+      .v-row {
+        margin-left: -12px !important;
+        margin-right: -12px !important;
+
+        .v-col {
+          padding: 12px !important;
+        }
+      }
+    }
+
+    &-timeline {
+      .gsky-post {
+        margin-bottom: 32px;
+      }
+
+      &__divider {
+        display: none;
+      }
+    }
+  }
+
+  // profile
+
+  .gsky-profile__header--desktop {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+
+  // ui
+
+  .v-dialog {
+    .v-overlay__content > .v-card {
+      border-radius: var($gsky-theme-border-radius) !important;
+    }
+  }
+}

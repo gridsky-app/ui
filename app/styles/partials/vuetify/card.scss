@@ -1,0 +1,19 @@
+body {
+  .v-card {
+    &-title {
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: -0.4px;
+    }
+
+    &--rounded {
+      border-radius: var(--gsky-border-radius);
+    }
+  }
+
+  .v-dialog--fullscreen {
+    > .v-overlay__content > .v-card {
+      border-radius: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+body {
+  .v-btn {
+    border-radius: 10px;
+
+    &--size-default {
+      font-size: 16px;
+      min-height: 44px;
+    }
+
+    &--flat {
+      .v-btn__overlay,
+      .v-ripple__container {
+        display: none !important;
+      }
+    }
+    &.v-theme--light:not(.v-btn--flat) {
+      background: #f2f2f2;
+    }
+  }
+}

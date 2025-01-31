@@ -1,0 +1,22 @@
+// tabs
+
+.gsky-tabs {
+  &:not(.gsky-tabs--slider) {
+    .v-tab__slider {
+      display: none;
+    }
+  }
+
+  &--divider-top {
+    border-top: 1px solid rgba(var(--v-theme-on-background), var(--v-border-opacity));
+
+    .v-tab__slider {
+      top: 0;
+      bottom: inherit;
+    }
+  }
+
+  &--divider-bottom {
+    border-bottom: 1px solid rgba(var(--v-theme-on-background), var(--v-border-opacity));
+  }
+}
