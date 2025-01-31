@@ -1,4 +1,4 @@
-html.gsky-theme--dx {
+html[data-theme-variant="dx"] {
   $gsky-theme-border-radius: 24px;
 
   .v-theme--dark {
@@ -15,6 +15,10 @@ html.gsky-theme--dx {
 
     &__actions {
       padding-top: 8px !important;
+    }
+
+    &--vertical .gsky-post__body {
+      border: 0;
     }
 
     &-dialog__layout--desktop {
