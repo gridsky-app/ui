@@ -4,17 +4,24 @@
   "version": "0.0.1",
   "main": "./nuxt.config.ts",
   "scripts": {
-    "dev": "nuxi dev .playground",
-    "build": "nuxt build .playground",
-    "generate": "nuxt generate .playground",
-    "preview": "nuxt preview .playground",
-    "lint": "eslint .",
-    "postinstall": "nuxt prepare .playground"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.3.10",
-    "eslint": "^9.1.1",
-    "nuxt": "^3.11.2",
-    "typescript": "^5.4.5"
+    "@nuxt/eslint-config": "^1.0.0",
+    "eslint": "^9.19.0",
+    "nuxt": "^3.15.4",
+    "typescript": "^5.7.3",
+    "@chromatic-com/storybook": "^3.2.4",
+    "@nuxtjs/storybook": "^8.3.3",
+    "@storybook/addon-essentials": "^8.5.2",
+    "@storybook/addon-interactions": "^8.5.2",
+    "@storybook/blocks": "^8.5.2",
+    "@storybook/test": "^8.5.2",
+    "@storybook/vue3": "^8.5.2",
+    "eslint-plugin-storybook": "^0.11.2",
+    "sass-embedded": "^1.83.4",
+    "storybook": "^8.5.2",
+    "vuetify": "^3.7.9"
   }
 }
