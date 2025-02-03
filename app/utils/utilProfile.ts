@@ -39,7 +39,7 @@ export function guardIsLogged(callback: Function, isLoginRequired: boolean = tru
 export async function followProfile(profile: any) {
     const atprotoAgent = useAtprotoAgent()
 
-    const response = await $agent
+    const response = await atprotoAgent
         .setService('private')
         .follow(profile.did)
 
@@ -51,7 +51,7 @@ export async function followProfile(profile: any) {
 export async function unfollowProfile(profile: any) {
     const atprotoAgent = useAtprotoAgent()
 
-    const response = await $agent
+    const response = await atprotoAgent
         .setService('private')
         .deleteFollow(profile.viewer.following)
 
@@ -63,7 +63,7 @@ export async function unfollowProfile(profile: any) {
 export async function uploadAvatar(imageBuffer: any) {
     const atprotoAgent = useAtprotoAgent()
 
-    const { data: uploadData } = await $agent
+    const { data: uploadData } = await atprotoAgent
         .setService('private')
         .api.com.atproto.repo.uploadBlob(imageBuffer, {
             encoding: 'image/png'
