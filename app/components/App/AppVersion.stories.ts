@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 
-import AppVersion from '/app/components/App/AppVersion.vue'
+import AppVersion from './AppVersion.vue'
 
 const meta = {
   title: 'App/Version',
@@ -11,7 +11,7 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const AppVersionStory: Story = {
+export const Default: Story = {
   args: {
     version: '1.0.0',
   },
