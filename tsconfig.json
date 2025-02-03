@@ -1,3 +1,8 @@
 {
-  "extends": "../.nuxt/tsconfig.json"
+  "extends": "../.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["app/*"] // enables us to use @components/MyComponent
+    }
+  }
 }
