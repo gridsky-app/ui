@@ -83,7 +83,7 @@ body {
     &.v-theme--dark {
       .v-overlay__scrim {
         opacity: 1;
-        background: rgba(28, 28, 28, 0.5);
+        background: rgba(28, 28, 28, 0.9);
       }
     }
   }
@@ -100,6 +100,7 @@ body {
   .v-theme--dark {
     --v-medium-emphasis-opacity: 0.5 !important;
     --v-theme-background: 0, 0, 0 !important;
+    --v-theme-surface: 24, 24, 24 !important;
 
     ::selection {
       background: white;

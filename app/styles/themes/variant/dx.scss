@@ -17,8 +17,19 @@ html[data-theme-variant="dx"] {
       padding-top: 8px !important;
     }
 
-    &--vertical .gsky-post__body {
-      border: 0;
+    &--vertical {
+      .gsky-media {
+        @media(min-width: 960px) {
+          border-radius: $gsky-theme-border-radius;
+          overflow: hidden;
+        }
+      }
+      .gsky-post__body {
+        @media(min-width: 960px) {
+          border: 1px solid rgba(var(--v-theme-on-background), var(--v-border-opacity));
+          border-radius: 4px;
+        }
+      }
     }
 
     &-dialog__layout--desktop {
@@ -77,6 +88,12 @@ html[data-theme-variant="dx"] {
   .v-dialog {
     .v-overlay__content > .v-card {
       border-radius: var($gsky-theme-border-radius) !important;
+    }
+  }
+
+  .v-overlay {
+    .v-overlay__scrim {
+      backdrop-filter: blur(32px);
     }
   }
 }
