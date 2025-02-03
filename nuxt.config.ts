@@ -17,7 +17,13 @@ export default defineNuxtConfig({
     ],
 
     imports: {
-        dirs: ['utils']
+        dirs: ['utils'],
+        presets: [
+            {
+                from: 'vuetify',
+                imports: ['useDisplay']
+            }
+        ]
     },
 
     build: {
