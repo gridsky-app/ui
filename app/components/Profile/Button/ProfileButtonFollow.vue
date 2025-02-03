@@ -1,12 +1,27 @@
 <script setup lang="ts">
-defineProps<{
-  profile: any
+const props = defineProps<{
+  outlined?: boolean
 }>()
+
+const buttonProps = computed(() => {
+  const options: any = {
+    size: 'small',
+    flat: true,
+  }
+
+  if (!props.outlined) {
+    options.color = 'primary'
+  } else {
+    options.variant = 'outlined'
+  }
+
+  return options
+})
 </script>
 
 <template>
   <v-btn
-      size="small" color="primary" flat
+      v-bind="buttonProps"
       :text="$t('profile.action.followProfile')"
   />
 </template>

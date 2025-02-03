@@ -11,8 +11,11 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const ProfileButtonFollowStory: Story = {
-  args: {
+export const Default: Story = {}
 
+
+export const Outlined: Story = {
+  args: {
+    outlined: true,
   },
 }

@@ -11,8 +11,4 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const ProfileButtonUnfollowStory: Story = {
-  args: {
-
-  },
-}
+export const Default: Story = {}
