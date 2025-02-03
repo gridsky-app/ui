@@ -37,7 +37,7 @@ export function guardIsLogged(callback: Function, isLoginRequired: boolean = tru
 }
 
 export async function followProfile(profile: any) {
-    const {$agent} = useNuxtApp()
+    const atprotoAgent = useAtprotoAgent()
 
     const response = await $agent
         .setService('private')
@@ -49,7 +49,7 @@ export async function followProfile(profile: any) {
 }
 
 export async function unfollowProfile(profile: any) {
-    const {$agent} = useNuxtApp()
+    const atprotoAgent = useAtprotoAgent()
 
     const response = await $agent
         .setService('private')
@@ -61,7 +61,7 @@ export async function unfollowProfile(profile: any) {
 }
 
 export async function uploadAvatar(imageBuffer: any) {
-    const {$agent} = useNuxtApp()
+    const atprotoAgent = useAtprotoAgent()
 
     const { data: uploadData } = await $agent
         .setService('private')
