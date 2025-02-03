@@ -8,20 +8,22 @@
     "build-storybook": "storybook build"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^1.0.0",
-    "eslint": "^9.19.0",
-    "nuxt": "^3.15.4",
-    "typescript": "^5.7.3",
     "@chromatic-com/storybook": "^3.2.4",
+    "@nuxt/eslint-config": "^1.0.0",
     "@nuxtjs/storybook": "^8.3.3",
     "@storybook/addon-essentials": "^8.5.2",
     "@storybook/addon-interactions": "^8.5.2",
     "@storybook/blocks": "^8.5.2",
     "@storybook/test": "^8.5.2",
     "@storybook/vue3": "^8.5.2",
+    "eslint": "^9.19.0",
     "eslint-plugin-storybook": "^0.11.2",
+    "nuxt": "^3.15.4",
     "sass-embedded": "^1.83.4",
     "storybook": "^8.5.2",
-    "vuetify": "^3.7.9"
+    "typescript": "^5.7.3",
+    "vue-i18n": "^11.1.0",
+    "vuetify": "^3.7.9",
+    "gridsky-i18n": "https://github.com/gridsky-app/i18n.git"
   }
 }
