@@ -1,5 +1,7 @@
 import type { StorybookConfig } from "@storybook-vue/nuxt";
 
+const path = require('path');
+
 const config: StorybookConfig = {
   stories: [
     "../stories/*.mdx",
@@ -13,6 +15,15 @@ const config: StorybookConfig = {
   framework: {
     name: "@storybook-vue/nuxt",
     options: {},
+  },
+  webpackFinal: async (config) => {
+    if (config.resolve) {
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        '@': path.resolve(__dirname, '../app'),
+      };
+    }
+    return config;
   },
 };
 export default config;
