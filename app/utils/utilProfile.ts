@@ -60,6 +60,10 @@ export async function unfollowProfile(profile: any) {
     return response
 }
 
+export function canFollowProfile(profile: any) {
+    return profile.viewer && !profile.viewer.following
+}
+
 export async function uploadAvatar(imageBuffer: any) {
     const atprotoAgent = useAtprotoAgent()
 
