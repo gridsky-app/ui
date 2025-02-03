@@ -6,7 +6,6 @@ const props = defineProps<{
 const buttonProps = computed(() => {
   const options: any = {
     size: 'small',
-    flat: true,
   }
 
   if (!props.outlined) {
