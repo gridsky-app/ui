@@ -97,8 +97,17 @@ const imageProps = computed(() => {
     letter-spacing: inherit;
     line-height: inherit;
 
+    @media(min-width: 600px) {
+      font-size: 16px !important;
+      margin-top: -2px;
+    }
+
     & + .v-card-subtitle {
       margin-top: -2px;
+
+      @media(min-width: 600px) {
+        margin-top: -6px;
+      }
     }
   }
 

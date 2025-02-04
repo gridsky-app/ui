@@ -30,7 +30,7 @@ const subtitle = computed(() => {
       class="text-caption"
   >
     <template v-slot:image="{ size }">
-      <ProfileAvatar :profile="profile" :size="size" />
+      <ProfileAvatar :profile="profile" :size="size" class="mr-1" />
     </template>
   </AppCardItem>
 </template>

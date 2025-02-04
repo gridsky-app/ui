@@ -10,5 +10,9 @@ body {
     &.v-theme--light:not(.v-btn--flat) {
       background: #f2f2f2;
     }
+
+    &__overlay {
+      display: none;
+    }
   }
 }
