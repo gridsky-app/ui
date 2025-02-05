@@ -61,6 +61,14 @@ export async function unfollowProfile(profile: any) {
 }
 
 export function canFollowProfile(profile: any) {
+    const accountStore = useAccountStore()
+
+    if (isLogged()) {
+        if (accountStore.account.did === profile.did) {
+            return false
+        }
+    }
+
     return profile.viewer && !profile.viewer.following
 }
 
