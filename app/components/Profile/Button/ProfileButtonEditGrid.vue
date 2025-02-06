@@ -4,8 +4,12 @@
       :min-width="28"
   >
     <Icon name="lucide:grid-2x2-plus" :size="13" />
-    <ProfileGridEditor
-        mode="add"
-    />
+    <ProfileGridDialog
+        activator="parent"
+    >
+      <ProfileGridEditor
+          mode="add"
+      />
+    </ProfileGridDialog>
   </v-btn>
 </template>
