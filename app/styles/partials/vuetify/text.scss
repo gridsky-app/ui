@@ -4,11 +4,7 @@ body {
     font-size: 14px !important;
     letter-spacing: -0.1px !important;
 
-    &--xs {
-      font-size: 12px;
-    }
-
-    @media(max-width: 360px) {
+    @media(max-width: 359px) {
       font-size: 12.7px !important;
     }
   }
@@ -34,6 +30,10 @@ body {
     font-size: 22px !important;
     line-height: inherit !important;
     letter-spacing: -0.02em !important;
+
+    @media(max-width: 359px) {
+      font-size: 20px !important;
+    }
   }
 
   .text-subtitle-2 {
