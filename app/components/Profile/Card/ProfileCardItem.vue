@@ -27,10 +27,13 @@ const subtitle = computed(() => {
       :image="profile.avatar"
       :to="routeProfile(profile)"
       link-full
-      class="text-caption"
   >
     <template v-slot:image="{ size }">
-      <ProfileAvatar :profile="profile" :size="size" class="mr-1" />
+      <ProfileAvatar
+          :profile="profile"
+          :size="size" class="mr-1"
+          show-only-if-intersected
+      />
     </template>
   </AppCardItem>
 </template>

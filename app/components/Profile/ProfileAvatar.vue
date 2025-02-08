@@ -5,6 +5,7 @@ const props = withDefaults(
       size?: number
       border?: boolean
       editable?: boolean
+      showOnlyIfIntersected?: boolean
     }>(),
     {
       size: 120,
@@ -20,6 +21,18 @@ const classes = computed(() => {
     }
   ]
 })
+
+const showProfileAvatar = ref(!props.showOnlyIfIntersected)
+
+function onProfileAvatarIntersect(isIntersecting: boolean) {
+  if (!props.showOnlyIfIntersected) {
+    return
+  }
+
+  if (isIntersecting) {
+    showProfileAvatar.value = true
+  }
+}
 </script>
 
 <template>
@@ -27,9 +40,10 @@ const classes = computed(() => {
       :size="size"
       :class="classes"
       color="grey-darken-4"
+      v-intersect="onProfileAvatarIntersect"
   >
-    <img
-        v-if="profile.avatar"
+    <v-img
+        v-if="profile.avatar && showProfileAvatar"
         :src="profile.avatar"
     />
     <Icon
