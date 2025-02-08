@@ -7,12 +7,22 @@
     font-size: 19px !important;
   }
 
+  // reset style to allow <FormField> on top of many v-text-field
+  &:hover .v-field__outline {
+    --v-field-border-opacity: 0.38 !important;
+  }
+
+  // restore border on v-text-field
+  &:hover > .v-field__outline {
+    --v-field-border-opacity: var(--v-field-border-opacity) !important;
+  }
+
   &--variant-solo {
     input {
       font-size: 14px;
 
       @media(min-width: 600px) {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   }
@@ -29,7 +39,7 @@
       font-size: 14px;
 
       @media(min-width: 600px) {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   }

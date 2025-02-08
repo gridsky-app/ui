@@ -14,5 +14,9 @@ body {
     &__overlay {
       display: none;
     }
+
+    @media(max-width: 360px) {
+      font-size: 11px !important;
+    }
   }
 }

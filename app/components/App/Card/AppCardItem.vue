@@ -50,7 +50,7 @@ const imageProps = computed(() => {
       <span v-else-if="title" v-text="title" />
     </template>
     <template v-if="subtitle" #subtitle>
-      <div class="mt-n1 mt-sm-0">
+      <div class="mt-n1 mt-sm-0 text-truncate">
         {{subtitle}}
       </div>
     </template>

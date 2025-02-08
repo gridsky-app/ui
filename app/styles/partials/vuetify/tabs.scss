@@ -1,5 +1,15 @@
 body {
-  .v-tabs--density-default {
-    --v-tabs-height: 56px !important;
+  .v-tabs {
+    &--density-default {
+      @media(min-width: 600px) {
+        --v-tabs-height: 56px !important;
+      }
+    }
+
+    .v-btn__content {
+      @media(min-width: 600px) {
+        font-size: 14px !important;
+      }
+    }
   }
 }

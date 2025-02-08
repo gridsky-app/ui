@@ -1,3 +1,3 @@
 <template>
-  <Icon name="lucide:heart" :size="24" style="margin-top: -2px;"/>
+  <Icon name="lucide:heart" :size="23" style="margin-top: -3px;"/>
 </template>
