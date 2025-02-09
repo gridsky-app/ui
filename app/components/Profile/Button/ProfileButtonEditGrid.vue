@@ -9,6 +9,7 @@
     >
       <ProfileGridEditor
           mode="add"
+          dialog
       />
     </ProfileGridDialog>
   </v-btn>
